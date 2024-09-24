@@ -1,3 +1,16 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import index from './Cafeinventory'; // Adjust the import path as necessary
+
+ReactDOM.render(
+  <Router>
+    <CafeInventoryApp />
+  </Router>,
+  document.getElementById('root')
+);
+
+
 import React, { useState, useEffect } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { AlertCircle, Coffee, Package, Truck, BarChart2, Bell, Menu, Search, MinusCircle, PlusCircle, Trash2, Download } from 'lucide-react';
